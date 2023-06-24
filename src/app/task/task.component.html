@@ -1,0 +1,10 @@
+<div class="task-container">
+    <ul *ngFor="let todo of todos$ | async">
+        <div class="task-title">{{ todo.title | titlecase }}</div>
+        <div class="task-status" >
+            <i *ngIf="!todo.done" (click)="onChangeStatus(todo.id)" class="material-icons">check</i>
+            <i *ngIf="todo.done" style="color: rgb(30, 176, 30); font-weight: bolder;" class="material-icons">check</i>
+            <i class="material-icons" (click)="onDelete(todo.id)" style="color: red;" (click)="onDelete(todo.id)" >delete</i>
+        </div>
+    </ul>
+</div>

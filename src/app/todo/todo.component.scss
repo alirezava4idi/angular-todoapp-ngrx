@@ -1,0 +1,49 @@
+.card {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card 
+{
+    input {
+        height: 1.75rem;
+        padding: .7rem;
+        border: none;
+        font-size: 1.2rem;
+        background-color: transparent;
+        border-bottom: 2px rgba(128, 128, 128, 0.325) solid;
+    }
+
+    input:focus
+    {
+        border: none;
+        outline: none;
+        border-bottom: 2px rgba(128, 128, 128, 0.754) solid;
+    }
+
+    button {
+        padding: .5rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        background-color: #FFF;
+        outline: none;
+        border: 1px solid rgba(128, 128, 128, 0.339);
+        cursor: pointer;
+    
+        &:focus, &:hover{
+            border: 1px solid gray;
+        }
+    
+    }
+
+    .error {
+        border: 2px red solid;
+        color: red;
+        padding: 1rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+}

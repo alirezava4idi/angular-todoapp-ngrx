@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Write a Task You Wish to do!</h2>
+    <div class="card">
+        <input #input type="text" (change)="onChange(input.value)" value="{{inputValue}}">
+        <button (click)="onCreate()">Create</button>
+        <div *ngIf="error$ | async" class="error">{{ error$ | async}}</div>
+        <div class="tasks">
+            <app-task></app-task>
+        </div>
+    </div>
+</div>
